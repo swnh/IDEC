@@ -3,9 +3,18 @@
 # Mentor Graphics software version 2022.3_2 (Build on Sep  9 2022)
 # Copyright (C) 1999-2024 by Mentor Graphics All rights reserved.
 
-# visualizer
+# visualizer design.bin qwave.db
+# Restoring last session...
+# Opening log file /tmp/visscratch.981ayy/hdloffice.log
+
+# 03:17:27: Loading design data...
+# 03:17:27: Loaded  design units
+# 03:17:27: Loaded  design hierarchy
+# 03:17:27: Loading waveform header...
+# 03:17:27: Loaded  waveform header
+# Source file /home/ch/Desktop/IDEC_CBNU_240626/2D_filter/buffer/top2.v is more recent than the design data
 # Window layout 'Default' saved in file: /home/ch/.visualizer/layout.xml
-# Start  : Thu 11 Jul 2024 04:39:07 AM EDT
-# End    : Thu 11 Jul 2024 04:39:16 AM EDT
-# VMSize : 720336 kB
-# VMPeak : 785396 kB
+# Start  : Sat 13 Jul 2024 03:17:24 AM EDT
+# End    : Sat 13 Jul 2024 03:23:57 AM EDT
+# VMSize : 1498412 kB
+# VMPeak : 1617672 kB

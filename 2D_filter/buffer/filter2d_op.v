@@ -1,15 +1,18 @@
 module filter2d_op(
                 input               clk,
                 input               rstn,
-                input               start,
-
+                input               start, // start signal
+                
+                // buffer read
                 output              mem_rd,
                 output  reg [15:0]  rd_addr,
                 input       [7:0]   rd_data,
 
+                // output data with strobe
                 output  reg         o_strb,
                 output  reg [7:0]   o_data,
 
+                // coefficient write
                 input               h_write,
                 input       [3:0]   h_idx,
                 input       [7:0]   h_data
@@ -131,7 +134,7 @@ always @(posedge clk or negedge rstn) begin
     end else begin
         o_strb <= (cnt == 11);
         if(cnt == 11) begin
-            o_data <= pd_out;
+            o_data <= pd_out; // data output
         end
     end
 end

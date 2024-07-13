@@ -15,7 +15,7 @@ integer idx, cnt;
 initial begin
     cnt = 0;
     rstn = 1'b1;
-    $readmemh("../img_in.dat", img_data);
+    $readmemh("../img_in.dat", img_data); // image data load
     i_strb = 1'b0;
     i_data = 'bx;
     #3;
@@ -26,7 +26,6 @@ initial begin
     @(posedge clk);
     @(posedge clk);
     repeat(3) begin // 3 Frames
-        $write("SET START !!! \n\n\n");
         for(idx=0; idx<65536; idx=idx+1) begin
             i_strb = 1'b1;
             i_data = img_data[idx];
@@ -37,7 +36,6 @@ initial begin
                 @(posedge clk);
             end
         end
-        $write("SET FINISHED !!!\n\n\n");
     end
     @(posedge clk);
     @(posedge clk);

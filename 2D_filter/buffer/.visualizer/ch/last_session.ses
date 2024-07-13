@@ -1,55 +1,68 @@
 <!-- THIS IS TOOL GENERATED SESSION FILE. PLEASE DO NOT MODIFY THIS -->
 <!DOCTYPE visualizer_session>
-<session skip_do_file="0" version="3">
- <app argc="4">
-  <argv value="vsim" pos="0"/>
-  <argv value="design.bin" pos="1"/>
-  <argv value="+_sv_debug_+vsim-visualizer=design.binopt-qwavedb=+signal+memory+wavefile=qwave.db" pos="2"/>
-  <argv value="+designfile+design.bin" pos="3"/>
+<session version="3" skip_do_file="0">
+ <app argc="3">
+  <argv pos="0" value="visualizer"/>
+  <argv pos="1" value="design.bin"/>
+  <argv pos="2" value="qwave.db"/>
  </app>
  <window_config>
-  <dockareas right="1914" bottom="418" left="1914" top="0"/>
-  <taborder right="instances+generallist+" bottom="transcript+wave+" left="testbench+classes+files+structure+"/>
-  <activetab activewindow="wave" right="generallist" bottom="wave" left="structure"/>
-  <window width="2883" dock_location="left" visible="1" y="0" x="0" undocked="0" type="testbench" height="1205"/>
-  <window width="2883" dock_location="left" visible="1" y="0" x="0" undocked="0" type="classes" height="1153"/>
-  <window width="2883" dock_location="left" visible="1" y="0" x="0" undocked="0" type="files" height="1153"/>
-  <window width="3223" dock_location="left" visible="1" y="0" x="0" undocked="0" type="structure" height="1153"/>
-  <window width="3223" dock_location="right" visible="1" y="0" x="0" undocked="0" type="instances" height="1153"/>
-  <window width="2883" dock_location="right" visible="1" y="180" x="346" undocked="0" type="generallist" height="1682"/>
-  <window width="3836" dock_location="bottom" visible="1" y="0" x="0" undocked="0" type="transcript" height="1153"/>
-  <window width="2883" dock_location="bottom" visible="1" y="0" x="0" undocked="0" type="wave" height="1205"/>
-  <window width="3840" visible="1" y="68" x="0" undocked="0" type="rtl" height="1800"/>
-  <window width="2883" dock_location="center" visible="0" y="112" x="414" undocked="1" type="source" height="1357"/>
+  <dockareas left="1061" bottom="271" top="0" right="808"/>
+  <taborder left="wave+structure+" bottom="transcript+" right="generallist+"/>
+  <activetab left="structure" bottom="transcript" right="generallist"/>
+  <window width="3836" visible="1" dock_location="left" undocked="0" y="0" height="1736" type="wave" x="0"/>
+  <window width="3022" visible="1" dock_location="left" undocked="0" y="0" height="1459" type="structure" x="0"/>
+  <window width="3836" visible="1" dock_location="right" undocked="0" y="0" height="1459" type="generallist" x="0"/>
+  <window width="3836" visible="1" dock_location="bottom" undocked="0" y="0" height="1736" type="transcript" x="0"/>
+  <window width="3840" visible="1" undocked="0" y="34" height="1871" type="rtl" x="0"/>
+  <window visible="0" dock_location="left" undocked="0" y="0" type="testbench" x="0"/>
+  <window visible="0" dock_location="left" undocked="0" y="0" type="classes" x="0"/>
+  <window visible="0" dock_location="left" undocked="0" y="0" type="files" x="0"/>
+  <window visible="1" dock_location="center" undocked="0" y="0" type="source" x="0"/>
+  <window visible="0" dock_location="center" undocked="0" id="1" y="0" type="source" x="0"/>
+  <window visible="0" dock_location="center" undocked="0" id="2" y="0" type="source" x="0"/>
+  <window width="3840" visible="0" dock_location="bottom" undocked="1" y="1617" height="251" type="timecone" x="0"/>
+  <window visible="0" dock_location="right" undocked="0" y="0" type="instances" x="0"/>
+  <window visible="0" dock_location="right" undocked="0" y="0" type="schematic" x="0"/>
+  <window visible="0" dock_location="right" undocked="0" y="0" type="uvmschematic" x="0"/>
  </window_config>
  <wave_file_mgr>
   <waveFile waveType="0" fileName="/home/ch/Desktop/IDEC_CBNU_240626/2D_filter/buffer/qwave.db" tagName="F0"/>
  </wave_file_mgr>
  <gui>
   <main_window visible="1">
+   <srcbrowser instancename="top_filter_2d" primary="true"/>
+   <sourcetclcommands>
+    <tcl command="src activate source"/>
+    <tcl command="src top 1"/>
+   </sourcetclcommands>
+   <srcbrowser instancename="top_filter_2d.i_filter.i_buf"/>
+   <sourcetclcommands>
+    <tcl command="src activate source1"/>
+    <tcl command="src top 1"/>
+   </sourcetclcommands>
+   <srcbrowser instancename="top_filter_2d.i_filter.i_buf.i_buf1"/>
+   <sourcetclcommands>
+    <tcl command="src activate source2"/>
+    <tcl command="src top 1"/>
+   </sourcetclcommands>
    <edge_gui cur_selection="AnyEdge"/>
   </main_window>
-  <watchTower_cur_setting curRadix="2" curDisplayTimeUnitStr="1ns" curDisplayTimeUnit="-9" curActiveWaveFile="F0" customDisplayTimeUnitListStr="">
-   <curTime hightime="0" lowtime="11141015"/>
+  <watchTower_cur_setting curRadix="8" curActiveWaveFile="F0" curDisplayTimeUnit="-9" customDisplayTimeUnitListStr="" curDisplayTimeUnitStr="1ns">
+   <curTime hightime="0" lowtime="11141145"/>
   </watchTower_cur_setting>
   <drv_rec_data drivers="true"/>
-  <testbench/>
-  <classes/>
-  <files/>
-  <structure selection="top_filter_2d.i_filter.i_op"/>
-  <instances/>
-  <generallist>
-   <listitem content="top_filter_2d.i_filter.i_op Scope 0 {} {}"/>
-  </generallist>
-  <transcript/>
   <wave name="Wave0">
    <timeunit value="11"/>
    <frequnit value="2"/>
    <showdiff value="0"/>
   </wave>
+  <structure selection="top_filter_2d"/>
+  <generallist/>
+  <transcript/>
  </gui>
  <wave_mgr sync_time_range="0">
-  <waveWindow valueWidth="83" displayTimeUnitStr="1ns" displayLeadingZeros="0" alignBaseName="0" wintype="4" displayGrid="0" displayGlobalView="1" secNudge="1" primNudge="1" displayFileTag="1" displayRadixWithValue="1" showMarkers="1" swapRepresentationOfX="0" snapToEdge="1" displayTimeUnit="-9" displayScopeName="1" justifySignalPath="Right" showSecCursor="1" nameWidth="195" signalHeight="27" waveWidth="3517" trackViewToTime="1" value_tooltip="0">
+  <waveWindow signalHeight="31" trackViewToTime="1" secNudge="1" showMarkers="1" waveWidth="775" value_tooltip="0" displayRadixWithValue="1" primNudge="1" swapRepresentationOfX="0" displayTimeUnit="-9" justifySignalPath="Right" displayLeadingZeros="0" displayGlobalView="1" wintype="4" showSecCursor="0" alignBaseName="0" displayScopeName="1" displayGrid="0" nameWidth="158" valueWidth="83" displayFileTag="1" displayTimeUnitStr="1ns" snapToEdge="1">
    <window name="Wave0">
     <timeunit value="11"/>
     <frequnit value="2"/>
@@ -58,72 +71,47 @@
    <viewPort>
     <beginTime hightime="0" lowtime="0"/>
     <endTime hightime="0" lowtime="33423435"/>
-    <beginViewTime hightime="0" lowtime="18233280"/>
-    <endViewTime hightime="0" lowtime="22427585"/>
-    <beginLastViewTime hightime="0" lowtime="18233280"/>
-    <endLastViewTime hightime="0" lowtime="22427585"/>
+    <beginViewTime hightime="0" lowtime="11141017"/>
+    <endViewTime hightime="0" lowtime="11141274"/>
+    <beginLastViewTime hightime="0" lowtime="11141017"/>
+    <endLastViewTime hightime="0" lowtime="11141274"/>
    </viewPort>
-   <primCursor hightime="0" lowtime="11141015"/>
-   <secCursor hightime="0" lowtime="0"/>
+   <primCursor hightime="0" lowtime="11141145"/>
    <wavetclcommands>
     <tcl command="onerror resume&#xa;wave update off&#xa;wave clearselection&#xa;"/>
     <tcl commandblock="custom radix definitions"></tcl>
     <tcl command="wave update off"/>
-    <tcl command="wave zoom range 18233280 22427585"/>
-    <tcl command="wave group top_filter_2d.i_filter.i_buf -backgroundcolor #004466"/>
-    <tcl command="wave add -group top_filter_2d.i_filter.i_buf top_filter_2d.i_filter.i_buf.clk -tag F0 -radix hexadecimal"/>
-    <tcl command="wave add -group top_filter_2d.i_filter.i_buf top_filter_2d.i_filter.i_buf.rstn -tag F0 -radix hexadecimal"/>
-    <tcl command="wave add -group top_filter_2d.i_filter.i_buf top_filter_2d.i_filter.i_buf.i_strb -tag F0 -radix hexadecimal"/>
-    <tcl command="wave add -group top_filter_2d.i_filter.i_buf top_filter_2d.i_filter.i_buf.i_data -tag F0 -radix hexadecimal -select"/>
-    <tcl command="wave add -group top_filter_2d.i_filter.i_buf top_filter_2d.i_filter.i_buf.start -tag F0 -radix hexadecimal"/>
-    <tcl command="wave add -group top_filter_2d.i_filter.i_buf top_filter_2d.i_filter.i_buf.mem_rd -tag F0 -radix hexadecimal"/>
-    <tcl command="wave add -group top_filter_2d.i_filter.i_buf top_filter_2d.i_filter.i_buf.rd_addr -tag F0 -radix hexadecimal"/>
-    <tcl command="wave add -group top_filter_2d.i_filter.i_buf top_filter_2d.i_filter.i_buf.rd_data -tag F0 -radix hexadecimal"/>
-    <tcl command="wave add -group top_filter_2d.i_filter.i_buf top_filter_2d.i_filter.i_buf.cnt_x -tag F0 -radix hexadecimal"/>
-    <tcl command="wave add -group top_filter_2d.i_filter.i_buf top_filter_2d.i_filter.i_buf.cnt_y -tag F0 -radix hexadecimal"/>
-    <tcl command="wave add -group top_filter_2d.i_filter.i_buf top_filter_2d.i_filter.i_buf.mode -tag F0 -radix hexadecimal"/>
-    <tcl command="wave add -group top_filter_2d.i_filter.i_buf top_filter_2d.i_filter.i_buf.mode_change -tag F0 -radix hexadecimal"/>
-    <tcl command="wave add -group top_filter_2d.i_filter.i_buf top_filter_2d.i_filter.i_buf.mem_wr -tag F0 -radix hexadecimal"/>
-    <tcl command="wave add -group top_filter_2d.i_filter.i_buf top_filter_2d.i_filter.i_buf.wr_data -tag F0 -radix hexadecimal"/>
-    <tcl command="wave add -group top_filter_2d.i_filter.i_buf top_filter_2d.i_filter.i_buf.wr_addr -tag F0 -radix hexadecimal"/>
-    <tcl command="wave add -group top_filter_2d.i_filter.i_buf top_filter_2d.i_filter.i_buf.cs0 -tag F0 -radix hexadecimal"/>
-    <tcl command="wave add -group top_filter_2d.i_filter.i_buf top_filter_2d.i_filter.i_buf.we0 -tag F0 -radix hexadecimal"/>
-    <tcl command="wave add -group top_filter_2d.i_filter.i_buf top_filter_2d.i_filter.i_buf.addr0 -tag F0 -radix hexadecimal"/>
-    <tcl command="wave add -group top_filter_2d.i_filter.i_buf top_filter_2d.i_filter.i_buf.din0 -tag F0 -radix hexadecimal"/>
-    <tcl command="wave add -group top_filter_2d.i_filter.i_buf top_filter_2d.i_filter.i_buf.dout0 -tag F0 -radix hexadecimal"/>
-    <tcl command="wave add -group top_filter_2d.i_filter.i_buf top_filter_2d.i_filter.i_buf.cs1 -tag F0 -radix hexadecimal"/>
-    <tcl command="wave add -group top_filter_2d.i_filter.i_buf top_filter_2d.i_filter.i_buf.we1 -tag F0 -radix hexadecimal"/>
-    <tcl command="wave add -group top_filter_2d.i_filter.i_buf top_filter_2d.i_filter.i_buf.addr1 -tag F0 -radix hexadecimal"/>
-    <tcl command="wave add -group top_filter_2d.i_filter.i_buf top_filter_2d.i_filter.i_buf.din1 -tag F0 -radix hexadecimal"/>
-    <tcl command="wave add -group top_filter_2d.i_filter.i_buf top_filter_2d.i_filter.i_buf.dout1 -tag F0 -radix hexadecimal"/>
+    <tcl command="wave zoom range 11141017 11141274"/>
+    <tcl command="wave group top_filter_2d.i_filter -backgroundcolor #004466"/>
+    <tcl command="wave add -group top_filter_2d.i_filter top_filter_2d.i_filter.clk -tag F0 -radix hexadecimal"/>
+    <tcl command="wave add -group top_filter_2d.i_filter top_filter_2d.i_filter.rstn -tag F0 -radix hexadecimal"/>
+    <tcl command="wave add -group top_filter_2d.i_filter top_filter_2d.i_filter.i_strb -tag F0 -radix hexadecimal"/>
+    <tcl command="wave add -group top_filter_2d.i_filter top_filter_2d.i_filter.i_data -tag F0 -radix hexadecimal"/>
+    <tcl command="wave add -group top_filter_2d.i_filter top_filter_2d.i_filter.i_op.rd_data -tag F0 -radix hexadecimal"/>
+    <tcl command="wave add -group top_filter_2d.i_filter top_filter_2d.i_filter.i_buf.mode_change -tag F0 -radix hexadecimal"/>
+    <tcl command="wave add -group top_filter_2d.i_filter top_filter_2d.i_filter.i_buf.mode -tag F0 -radix hexadecimal"/>
+    <tcl command="wave add -group top_filter_2d.i_filter top_filter_2d.i_filter.o_strb -tag F0 -radix hexadecimal"/>
+    <tcl command="wave add -group top_filter_2d.i_filter top_filter_2d.i_filter.i_op.pd_out -tag F0 -radix decimal"/>
+    <tcl command="wave add -group top_filter_2d.i_filter top_filter_2d.i_filter.i_op.acc -tag F0 -radix decimal"/>
+    <tcl command="wave add -group top_filter_2d.i_filter top_filter_2d.i_filter.i_op.acc_in -tag F0 -radix decimal"/>
+    <tcl command="wave add -group top_filter_2d.i_filter top_filter_2d.i_filter.i_op.pd_en -tag F0 -radix hexadecimal"/>
+    <tcl command="wave add -group top_filter_2d.i_filter top_filter_2d.i_filter.i_op.mul -tag F0 -radix decimal"/>
+    <tcl command="wave add -group top_filter_2d.i_filter top_filter_2d.i_filter.i_op.pd -tag F0 -radix hexadecimal"/>
+    <tcl command="wave add -group top_filter_2d.i_filter top_filter_2d.i_filter.i_op.coeff -tag F0 -radix hexadecimal"/>
+    <tcl command="wave add -group top_filter_2d.i_filter top_filter_2d.i_filter.o_data -tag F0 -radix decimal -foregroundcolor Black -select"/>
+    <tcl command="wave add -group top_filter_2d.i_filter top_filter_2d.i_filter.i_op.start -tag F0 -radix hexadecimal"/>
+    <tcl command="wave add -group top_filter_2d.i_filter top_filter_2d.i_filter.i_op.mem_rd -tag F0 -radix hexadecimal"/>
+    <tcl command="wave add -group top_filter_2d.i_filter top_filter_2d.i_filter.i_op.acc_en -tag F0 -radix hexadecimal"/>
+    <tcl command="wave add -group top_filter_2d.i_filter top_filter_2d.i_filter.i_op.cnt -tag F0 -radix decimal"/>
+    <tcl command="wave add -group top_filter_2d.i_filter top_filter_2d.i_filter.i_op.cnt_x -tag F0 -radix decimal"/>
+    <tcl command="wave add -group top_filter_2d.i_filter top_filter_2d.i_filter.i_op.cnt_y -tag F0 -radix decimal"/>
     <tcl command="wave insertion [expr [wave index insertpoint] + 1]"/>
+    <tcl command="wave add top_filter_2d.i_filter.i_op.rd_addr -tag F0 -radix decimal"/>
     <tcl command="wave group top_filter_2d.i_filter.i_op -backgroundcolor #006666"/>
-    <tcl command="wave add -group top_filter_2d.i_filter.i_op top_filter_2d.i_filter.i_op.clk -tag F0 -radix hexadecimal"/>
-    <tcl command="wave add -group top_filter_2d.i_filter.i_op top_filter_2d.i_filter.i_op.rstn -tag F0 -radix hexadecimal"/>
-    <tcl command="wave add -group top_filter_2d.i_filter.i_op top_filter_2d.i_filter.i_op.start -tag F0 -radix hexadecimal"/>
-    <tcl command="wave add -group top_filter_2d.i_filter.i_op top_filter_2d.i_filter.i_op.mem_rd -tag F0 -radix hexadecimal"/>
-    <tcl command="wave add -group top_filter_2d.i_filter.i_op top_filter_2d.i_filter.i_op.rd_addr -tag F0 -radix hexadecimal"/>
-    <tcl command="wave add -group top_filter_2d.i_filter.i_op top_filter_2d.i_filter.i_op.rd_data -tag F0 -radix hexadecimal"/>
-    <tcl command="wave add -group top_filter_2d.i_filter.i_op top_filter_2d.i_filter.i_op.o_strb -tag F0 -radix hexadecimal"/>
-    <tcl command="wave add -group top_filter_2d.i_filter.i_op top_filter_2d.i_filter.i_op.o_data -tag F0 -radix hexadecimal"/>
-    <tcl command="wave add -group top_filter_2d.i_filter.i_op top_filter_2d.i_filter.i_op.h_write -tag F0 -radix hexadecimal"/>
-    <tcl command="wave add -group top_filter_2d.i_filter.i_op top_filter_2d.i_filter.i_op.h_idx -tag F0 -radix hexadecimal"/>
-    <tcl command="wave add -group top_filter_2d.i_filter.i_op top_filter_2d.i_filter.i_op.h_data -tag F0 -radix hexadecimal"/>
-    <tcl command="wave add -group top_filter_2d.i_filter.i_op top_filter_2d.i_filter.i_op.on_proc -tag F0 -radix hexadecimal"/>
-    <tcl command="wave add -group top_filter_2d.i_filter.i_op top_filter_2d.i_filter.i_op.cnt -tag F0 -radix hexadecimal"/>
-    <tcl command="wave add -group top_filter_2d.i_filter.i_op top_filter_2d.i_filter.i_op.cnt_x -tag F0 -radix hexadecimal"/>
-    <tcl command="wave add -group top_filter_2d.i_filter.i_op top_filter_2d.i_filter.i_op.cnt_y -tag F0 -radix hexadecimal"/>
-    <tcl command="wave add -group top_filter_2d.i_filter.i_op top_filter_2d.i_filter.i_op.pd -tag F0 -radix hexadecimal"/>
-    <tcl command="wave add -group top_filter_2d.i_filter.i_op top_filter_2d.i_filter.i_op.pd_en -tag F0 -radix hexadecimal"/>
-    <tcl command="wave add -group top_filter_2d.i_filter.i_op top_filter_2d.i_filter.i_op.h -tag F0 -radix hexadecimal"/>
-    <tcl command="wave add -group top_filter_2d.i_filter.i_op top_filter_2d.i_filter.i_op.coeff -tag F0 -radix hexadecimal"/>
-    <tcl command="wave add -group top_filter_2d.i_filter.i_op top_filter_2d.i_filter.i_op.mul -tag F0 -radix hexadecimal"/>
-    <tcl command="wave add -group top_filter_2d.i_filter.i_op top_filter_2d.i_filter.i_op.acc -tag F0 -radix hexadecimal"/>
-    <tcl command="wave add -group top_filter_2d.i_filter.i_op top_filter_2d.i_filter.i_op.acc_in -tag F0 -radix hexadecimal"/>
-    <tcl command="wave add -group top_filter_2d.i_filter.i_op top_filter_2d.i_filter.i_op.acc_en -tag F0 -radix hexadecimal"/>
-    <tcl command="wave add -group top_filter_2d.i_filter.i_op top_filter_2d.i_filter.i_op.pd_rnd_1 -tag F0 -radix hexadecimal"/>
-    <tcl command="wave add -group top_filter_2d.i_filter.i_op top_filter_2d.i_filter.i_op.pd_rnd -tag F0 -radix hexadecimal"/>
-    <tcl command="wave add -group top_filter_2d.i_filter.i_op top_filter_2d.i_filter.i_op.pd_out -tag F0 -radix hexadecimal"/>
+    <tcl command="wave add -group top_filter_2d.i_filter.i_op top_filter_2d.i_filter.i_buf.i_buf0.addr -tag F0 -radix decimal"/>
+    <tcl command="wave add -group top_filter_2d.i_filter.i_op top_filter_2d.i_filter.i_buf.i_buf0.dout -tag F0 -radix hexadecimal"/>
+    <tcl command="wave add -group top_filter_2d.i_filter.i_op top_filter_2d.i_filter.i_buf.i_buf1.addr -tag F0 -radix decimal"/>
+    <tcl command="wave add -group top_filter_2d.i_filter.i_op top_filter_2d.i_filter.i_buf.i_buf1.dout -tag F0 -radix hexadecimal"/>
     <tcl command="wave insertion [expr [wave index insertpoint] + 1]"/>
     <tcl command="wave update on"/>
     <tcl command="wave top 0"/>
@@ -133,5 +121,5 @@
  </wave_mgr>
  <mem_mgr/>
  <windows/>
- <dut selection="top_filter_2d.i_filter.i_op"/>
+ <dut selection="top_filter_2d"/>
 </session>

@@ -17,7 +17,9 @@ always @(posedge clk or negedge rstn) begin
         cnt_x <= 255;
         cnt_y <= 255;
     end else begin
+        // When i_strb is asserted
         if(i_strb == 1'b1) begin
+            // pixel counting
             cnt_x <= (cnt_x == 255) ? 0 :cnt_x+1;
             if(cnt_x == 255) begin
                 cnt_y <= (cnt_y == 255) ? 0 : cnt_y+1;
@@ -26,11 +28,11 @@ always @(posedge clk or negedge rstn) begin
     end
 end
 
-reg         mode;
+reg         mode; // 0: WR buf0, 1: WR buf1
 wire        mode_change;
 reg         mem_wr;
 reg [7:0]   wr_data;
-
+// if the last pixel of a frame is store, change mode and start
 assign mode_change = (mem_wr == 1'b1) && (cnt_x == 255) && (cnt_y == 255);
 always @(posedge clk or negedge rstn) begin
     if(!rstn) begin
@@ -40,10 +42,11 @@ always @(posedge clk or negedge rstn) begin
         if(mode_change == 1'b1) begin
             mode <= ~mode;
         end
-        start <= mode_change; // WR -> RD
+        start <= mode_change;
     end
 end
 
+// memory write at the next cycle of the input strobe
 always @(posedge clk or negedge rstn) begin
     if(!rstn) begin
         mem_wr  <= 1'b0;
@@ -68,7 +71,7 @@ wire    [15:0]  addr1 = (mode == 1'b1) ? wr_addr : rd_addr;
 wire    [7:0]   din1  = (mode == 1'b1) ? wr_data : 'b0;
 wire    [7:0]   dout1;
 
-assign rd_data = (mode == 1'b1) ? dout1 : dout0;
+assign rd_data = (mode == 1'b0) ? dout1 : dout0;
 
 mem_single #(
             .WD(8),

@@ -2,7 +2,9 @@ m255
 K4
 z2
 Z0 !s99 nomlopt
-!s11f MIXED_VERSIONS
+R0
+R0
+!s11f vlog 2022.3_2 2022.09, Sep  9 2022
 13
 !s112 1.1
 !i10d 8192
@@ -10,135 +12,136 @@ Z0 !s99 nomlopt
 !i10f 100
 cModel Technology
 Z1 d/home/ch/Desktop/IDEC_CBNU_240626/2D_filter/buffer
-T_opt
-!s110 1720687281
-V00Q76X=cYgn_Z7eQ7Ljbm1
-04 13 4 work top_filter_2d fast 0
-=1-000ae431a4f1-668f9ab0-e49ad-1230
-R0
-!s12b OEM100
-!s124 OEM100
-o-quiet -auto_acc_if_foreign -work work
-Z2 tCvgOpt 0
-n@_opt
-OE;O;2022.3_2;75
 vfilter2d
-Z3 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
-Z4 !s110 1720687121
+Z2 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+!s110 1720846112
 !i10b 1
 !s100 NHm`[eiMZ`_=KlJzflTeO1
 IgUNZckBShT[Qdb]SP]Q=e2
 S1
 R1
-Z5 w1720594409
+Z3 w1720594409
 8filter2d.v
 Ffilter2d.v
-!i122 1
+!i122 0
 L0 1 48
-Z6 VDg1SIo80bB@j0V0VzS_@n1
-Z7 OE;L;2022.3_2;75
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+Z5 OE;L;2022.3_2;75
 r1
 !s85 0
 31
-Z8 !s108 1720687121.000000
-Z9 !s107 ../mem_sim.v|top2.v|filter2d.v|filter2d_op.v|filter2d_buf.v|
-Z10 !s90 -sv|filter2d_buf.v|filter2d_op.v|filter2d.v|top2.v|../mem_sim.v|
+!s108 1720846112.000000
+!s107 ../mem_sim.v|top2.v|filter2d.v|filter2d_op.v|filter2d_buf.v|
+!s90 -sv|filter2d_buf.v|filter2d_op.v|filter2d.v|top2.v|../mem_sim.v|
 !i113 0
-Z11 o-sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
-R2
+Z6 o-sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z7 tCvgOpt 0
 vfilter2d_buf
-R3
-R4
+R2
+Z8 !s110 1720855444
 !i10b 1
-!s100 ^a2BP3jZeWOlKKbHoiN@^1
-I8_5:bTSLMGdhb2063cW200
+!s100 [;C9ZMWlBQLeQKd:B:n[g0
+IXzBIaW?lh9Y6[Cn;WY:U_2
 S1
 R1
-w1720598167
+w1720854813
 8filter2d_buf.v
 Ffilter2d_buf.v
-!i122 1
-L0 1 99
-R6
-R7
+!i122 2
+L0 1 102
+R4
+R5
 r1
 !s85 0
 31
-R8
-R9
-R10
+Z9 !s108 1720855444.000000
+Z10 !s107 ../mem_sim.v|top2.v|filter2d_op.v|filter2d_buf.v|
+Z11 !s90 -sv|filter2d_buf.v|filter2d_op.v|top2.v|../mem_sim.v|
 !i113 0
-R11
-R2
+R6
+R7
 vfilter2d_op
-R3
-R4
+R2
+R8
 !i10b 1
-!s100 mUPX6CmiW0JOzzzP]l97Q3
-IiRU=HVbc`]2g[0o3o5NT80
+!s100 =>ZAa4eQP5^QP4IU3N=hl0
+IMTzD3__hXcDX[S3?lL^aZ3
 S1
 R1
-w1720599998
+w1720844547
 8filter2d_op.v
 Ffilter2d_op.v
-!i122 1
-L0 1 139
-R6
-R7
+!i122 2
+L0 1 142
+R4
+R5
 r1
 !s85 0
 31
-R8
 R9
 R10
-!i113 0
 R11
-R2
+!i113 0
+R6
+R7
 vmem_single
-R3
-R4
+R2
+R8
 !i10b 1
 !s100 z[`RH>?Sz9UQU2B?1BNBk1
 IPRRP9Y290Rmb^<VLYl>o=1
 S1
 R1
-R5
+R3
 8../mem_sim.v
 F../mem_sim.v
-!i122 1
+!i122 2
 L0 1 25
-R6
-R7
+R4
+R5
 r1
 !s85 0
 31
-R8
 R9
 R10
-!i113 0
 R11
-R2
+!i113 0
+R6
+R7
+Topt
+!s128 design.bin
+!s110 1720855447
+VP5nRXZOoR4Dlc1jO3CL4b2
+04 13 4 work top_filter_2d fast 0
+R0
+!s12b OEM100
+!s124 OEM100
+o-debug -designfile design.bin
+R7
+nopt
+OE;O;2022.3_2;75
+R1
 vtop_filter_2d
-R3
-R4
+R2
+R8
 !i10b 1
-!s100 5NE:]X71O^10;E7_dDE2A0
-IAeHFS?6XW3gYBJ7HjH5dZ2
+!s100 =];1X1k;[F:1=7>0bg@@90
+I;XCNe?1LmA1^LhJRDE:R>0
 S1
 R1
-w1720599883
+w1720855404
 8top2.v
 Ftop2.v
-!i122 1
-L0 1 72
-R6
-R7
+!i122 2
+L0 1 70
+R4
+R5
 r1
 !s85 0
 31
-R8
 R9
 R10
-!i113 0
 R11
-R2
+!i113 0
+R6
+R7

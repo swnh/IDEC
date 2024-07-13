@@ -1,0 +1,52 @@
+<!-- THIS IS TOOL GENERATED SESSION FILE. PLEASE DO NOT MODIFY THIS -->
+<!DOCTYPE visualizer_session>
+<session skip_do_file="0" version="3">
+ <app argc="3">
+  <argv value="visualizer" pos="0"/>
+  <argv value="design.bin" pos="1"/>
+  <argv value="qwave.db" pos="2"/>
+ </app>
+ <window_config>
+  <dockareas bottom="271" top="0" right="808" left="1061"/>
+  <taborder bottom="transcript+" right="generallist+" left="structure+"/>
+  <activetab bottom="transcript" activewindow="generallist" right="generallist" left="structure"/>
+  <window x="0" y="0" width="3022" visible="1" height="1459" type="structure" dock_location="left" undocked="0"/>
+  <window x="0" y="0" width="2769" visible="1" height="1736" type="generallist" dock_location="right" undocked="0"/>
+  <window x="0" y="0" width="1955" visible="1" height="1736" type="transcript" dock_location="bottom" undocked="0"/>
+  <window x="0" y="36" width="3840" visible="1" height="1871" type="rtl" undocked="0"/>
+  <window x="0" y="0" visible="0" type="testbench" dock_location="left" undocked="0"/>
+  <window x="0" y="0" visible="0" type="classes" dock_location="left" undocked="0"/>
+  <window x="0" y="0" visible="0" type="files" dock_location="left" undocked="0"/>
+  <window x="2018" y="168" width="808" visible="0" height="1461" type="wave" dock_location="right" undocked="1"/>
+  <window x="0" y="0" visible="1" type="source" dock_location="center" undocked="0"/>
+  <window x="0" y="0" id="1" visible="0" type="source" dock_location="center" undocked="0"/>
+  <window x="0" y="1617" width="3840" visible="0" height="251" type="timecone" dock_location="bottom" undocked="1"/>
+  <window x="0" y="0" visible="0" type="instances" dock_location="right" undocked="0"/>
+  <window x="0" y="0" visible="0" type="schematic" dock_location="right" undocked="0"/>
+  <window x="0" y="0" visible="0" type="uvmschematic" dock_location="right" undocked="0"/>
+ </window_config>
+ <wave_file_mgr>
+  <waveFile fileName="/home/ch/Desktop/IDEC_CBNU_240626/2D_filter/qwave.db" waveType="0" tagName="F0"/>
+ </wave_file_mgr>
+ <gui>
+  <main_window visible="1">
+   <srcbrowser primary="true" instancename="top_filter_2d"/>
+   <sourcetclcommands>
+    <tcl command="src activate source"/>
+    <tcl command="src top 1"/>
+   </sourcetclcommands>
+   <edge_gui cur_selection="AnyEdge"/>
+  </main_window>
+  <watchTower_cur_setting curDisplayTimeUnit="-9" curRadix="8" curActiveWaveFile="F0" customDisplayTimeUnitListStr="" curDisplayTimeUnitStr="1ns">
+   <curTime lowtime="115" hightime="0"/>
+  </watchTower_cur_setting>
+  <drv_rec_data drivers="true"/>
+  <structure selection="top_filter_2d.i_filter2d"/>
+  <generallist/>
+  <transcript/>
+ </gui>
+ <wave_mgr sync_time_range="0"/>
+ <mem_mgr/>
+ <windows/>
+ <dut selection="top_filter_2d.i_filter2d"/>
+</session>

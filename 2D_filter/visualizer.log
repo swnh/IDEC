@@ -1,0 +1,18 @@
+# VISUALIZERROOT = '/Tools/Siemens/QuestaSim/questasim/linux_x86_64/VisualizerRls'
+# USER = 'ch'
+# Mentor Graphics software version 2022.3_2 (Build on Sep  9 2022)
+# Copyright (C) 1999-2024 by Mentor Graphics All rights reserved.
+
+# visualizer design.bin qwave.db
+# Opening log file /tmp/visscratch.aK1P3P/hdloffice.log
+
+# 02:22:30: Loading design data...
+# 02:22:30: Loaded  design units
+# 02:22:30: Loaded  design hierarchy
+# 02:22:30: Loading waveform header...
+# 02:22:30: Loaded  waveform header
+# Window layout 'Default' saved in file: /home/ch/.visualizer/layout.xml
+# Start  : Sat 13 Jul 2024 02:22:27 AM EDT
+# End    : Sat 13 Jul 2024 02:53:17 AM EDT
+# VMSize : 1345596 kB
+# VMPeak : 1418516 kB

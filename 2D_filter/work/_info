@@ -1,0 +1,97 @@
+m255
+K4
+z2
+Z0 !s99 nomlopt
+!s11f MIXED_VERSIONS
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 d/home/ch/Desktop/IDEC_CBNU_240626/2D_filter
+vfilter2d
+Z2 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z3 !s110 1720851579
+!i10b 1
+!s100 0hnhJRT:GDi`YLhND=9ZZ1
+I8dIik4CD=RA<W0<n^fDc>3
+S1
+R1
+Z4 w1720594409
+8filter2d.v
+Ffilter2d.v
+!i122 1
+L0 1 137
+Z5 VDg1SIo80bB@j0V0VzS_@n1
+Z6 OE;L;2022.3_2;75
+r1
+!s85 0
+31
+Z7 !s108 1720851579.000000
+Z8 !s107 top1.v|mem_sim.v|filter2d.v|
+Z9 !s90 -sv|filter2d.v|mem_sim.v|top1.v|
+!i113 0
+Z10 o-sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z11 tCvgOpt 0
+vmem_single
+R2
+R3
+!i10b 1
+!s100 z[`RH>?Sz9UQU2B?1BNBk1
+IRZ^9:4T5IF1d>^4en[8nA0
+S1
+R1
+R4
+8mem_sim.v
+Fmem_sim.v
+!i122 1
+L0 1 25
+R5
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 0
+R10
+R11
+Topt
+!s128 design.bin
+!s110 1720851684
+V9emJ9mJ2Fnz<k0I_MUERm2
+04 13 4 work top_filter_2d fast 0
+R0
+!s12b OEM100
+!s124 OEM100
+o-debug -designfile design.bin
+R11
+nopt
+OE;O;2022.3_2;75
+R1
+vtop_filter_2d
+R2
+R3
+!i10b 1
+!s100 H2hQ1m@z3e:3>YWDFcQF42
+I]_MX[6bAXIeJ^gbFmnUSl2
+S1
+R1
+R4
+8top1.v
+Ftop1.v
+!i122 1
+L0 1 71
+R5
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 0
+R10
+R11
